@@ -3818,3 +3818,7 @@ body {
   text-align-last: center;
   color: #fff;
 }
+
+.row {
+  background-color: #F2F4F8;
+}
