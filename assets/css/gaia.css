@@ -3822,3 +3822,8 @@ body {
 .row {
   background-color: #F2F4F8;
 }
+
+.row h5 {
+    color: hsl(20, 15%, 30%);
+    text-align-last: center;
+}
