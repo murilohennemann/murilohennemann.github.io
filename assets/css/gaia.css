@@ -88,6 +88,10 @@ h6 a,
 
 }
 
+
+
+
+
 .content-blog {
   padding: 30px 0;
 }
@@ -153,9 +157,8 @@ h6, .h6 {
   font-size: 14px;
   line-height: 1.213483146em;
   color: #43B1FF;
-    text-align: justify;
     text-align-last: left;
-    margin-top: 12px;
+    margin-top: 40px;
     margin-bottom: 6px;
 }
 
@@ -191,14 +194,14 @@ small,
 }
 
 a {
-  color: #777777;
+  color: #43B1FF;
   opacity: .7;
   font-size: 14px;
 }
 a:hover {
-  color: #777777;
+  color: #7772FF;;
   opacity: 1;
-}
+}  
 
 .title {
   text-align: center;
@@ -1377,7 +1380,7 @@ a,
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar-default .navbar-nav > li > a:not(.btn) {
-  color: #434547;
+  color: #7772FF;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:not(.btn):hover,
@@ -1405,7 +1408,7 @@ a,
   background-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #434547;
+  color: #337ab7;
 }
 .navbar-default:not(.navbar-transparent) .btn-default:hover {
   color: #c5a47e;
@@ -2033,7 +2036,6 @@ a,
   position: relative;
   color: white;
   text-align: center;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   vertical-align: center;
   line-height: 1.7;
   position: relative;
@@ -2790,7 +2792,7 @@ a,
     margin: 0;
   }
   .section-header .content h1 {
-    font-size: 4.5em;
+    font-size: 1.2em;
     letter-spacing: 0.07em;
     line-height: 1.7;
   }
@@ -2799,7 +2801,11 @@ a,
   }
   .section-header .content h5 {
     font-size: 1.125em;
-    margin-top: 50px;
+    margin-top: -50px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
   }
   .section-header .content .separator {
     width: 12em;
@@ -2825,24 +2831,60 @@ a,
   h1 {
     font-size: 2em;
     line-height: 1.25;
+     text-align: justify; /* For Edge */ 
+    text-align-last: left;
   }
   h1.responsive-small {
     font-size: 2.3em !important;
+     text-align: justify; /* For Edge */ 
+    text-align-last: left;
   }
 
   h2 {
     font-size: 1.625em;
     line-height: 1.15384615;
+     text-align: justify; /* For Edge */ 
+    text-align-last: left;
   }
 
   h3 {
     font-size: 1.375em;
     line-height: 1.13636364;
+     text-align: justify; /* For Edge */ 
+    text-align-last: left;
   }
 
   h4 {
     line-height: 1.11111111;
+     text-align: justify; /* For Edge */ 
+    text-align-last: center;
   }
+
+  h6 {
+ text-align: justify; /* For Edge */ 
+    text-align-last: left;
+  }
+
+  p {
+ text-align: justify; /* For Edge */ 
+    text-align-last: left;
+  }
+
+  a {
+    color: #43B1FF;
+
+  }
+
+   a:hover {
+    color: #7772FF;
+  
+  }
+
+  .section-header .parallax .image {
+    width: 100vh;
+    height: 115vh;
+  }
+
 
   .navbar-transparent {
     background-color: transparent;
@@ -3826,4 +3868,15 @@ body {
 .row h5 {
     color: hsl(20, 15%, 30%);
     text-align-last: center;
+}
+
+.col-md-offset-2 img{
+ margin: 0 auto;
+    height: 160px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.col-md-4 {
+   margin-top: 10px;
 }
