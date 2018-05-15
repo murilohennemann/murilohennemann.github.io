@@ -2786,7 +2786,7 @@ a,
     height: 100vh;
   }
   .section-header .content {
-    top: 50%;
+    top: 45%;
   }
   .section-header .content h1, .section-header .content h5, .section-header .content p {
     margin: 0;
