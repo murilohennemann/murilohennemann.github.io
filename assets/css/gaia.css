@@ -2783,7 +2783,7 @@ a,
     height: 80vh;
   }
   .section-header .parallax:after, .section-header .static-image:after {
-    height: 80vh;
+    height: 95vh;
   }
   .section-header .content {
     top: 50%;
