@@ -2780,10 +2780,10 @@ a,
     padding: 0 !important;
   }
   .section-header .parallax, .section-header .static-image {
-    height: 80vh;
+    height: 95vh;
   }
   .section-header .parallax:after, .section-header .static-image:after {
-    height: 95vh;
+    height: 100vh;
   }
   .section-header .content {
     top: 50%;
@@ -2882,7 +2882,7 @@ a,
 
   .section-header .parallax .image {
     width: 100vh;
-    height: 115vh;
+    height: 140vh;
   }
 
 
