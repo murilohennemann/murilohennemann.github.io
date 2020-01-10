@@ -68,6 +68,7 @@ h6,
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', sans-serif;
+  color: #ccc;
 
 }
 h1 a,
@@ -101,23 +102,30 @@ h6 a,
 }
 
 h1, .h1 {
-  font-size: 16px;
-  line-height: 1.213483146em;
-  font-weight: bold;
-font-family: 'Muli', sans-serif;
-color: #000;
-    text-align: justify;
-    text-align-last: left;
-        margin-top: 6px;
-    margin-bottom: 12px;
-    text-transform: uppercase;
+position: relative;
+    font-family: Open Sans ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.4em;
+  font-size: 3.2em;
+    display: flex;
+    align-items: center;
+    color: #FBFBFB;
+      margin: 0.4em 0;
+}
+
 }
 
 h2, .h2 {
   font-size: 2.4em;
-  line-height: 1.25;
-  margin: 0.4em 0;
-  font-weight: bold;
+  position: relative;
+font-family: Open Sans ExtraBold;
+font-style: normal;
+font-weight: 800;
+line-height: 1.2em;
+display: flex;
+align-items: center;
+color: #cccccc;
 }
 
 h3, .h3 {
@@ -174,6 +182,19 @@ p {
     margin-top: 12px;
     margin-bottom: 24px;
 
+
+position: relative;
+
+font-family: Open Sans ExtraBold;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+display: flow-root;
+align-items: center;
+
+color: #AEAEAE;
+
 }
 
 p,
@@ -194,9 +215,8 @@ small,
 }
 
 a {
-  color: #43B1FF;
+  color: #8ECFDD;
   opacity: .7;
-  font-size: 14px;
 }
 a:hover {
   color: #7772FF;;
@@ -403,7 +423,7 @@ body > .navbar-collapse a {
 }
 
 *::selection {
-  background: #7772FF;
+  background: #772BD8;
   color: #FFFFFF;
 }
 
@@ -551,7 +571,7 @@ a,
   line-height: 1.6em;
   opacity: 0.8;
   filter: alpha(opacity=80);
-  padding: 10px 20px;
+  padding: 0 40px;
   border-color: #888888;
   color: #888888;
   text-transform: uppercase;
@@ -563,7 +583,7 @@ a,
 .navbar .navbar-nav > li > a.btn.active, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle {
   background-color: transparent;
-  color: #777777;
+  color: #8ECFDD;
   border-color: #777777;
 }
 .btn:disabled, .btn[disabled], .btn.disabled,
@@ -799,7 +819,7 @@ a,
 .btn-simple {
   border: 0;
   font-size: 14px;
-  padding: 10px 20px;
+  margin: -20px 0 0;
 }
 .btn-simple.btn-icon {
   padding: 10px;
@@ -1758,10 +1778,9 @@ a,
 
 .btn-social {
   opacity: 0.85;
-  padding: 8px 9px;
 }
 .btn-social .fa {
-  font-size: 18px;
+  font-size: 40px;
   top: -1px;
   vertical-align: middle;
   display: inline-block;
@@ -1771,8 +1790,7 @@ a,
   padding: 9px 10px;
 }
 .btn-social.btn-simple {
-  padding: 9px 5px;
-  font-size: 18px;
+  font-size: 40px;
 }
 .btn-social.btn-simple .fa {
   font-size: 20px;
@@ -2617,27 +2635,6 @@ a,
   min-height: 0;
 }
 
-.section-our-clients-freebie .list-logos img {
-  position: inherit;
-  top: 0;
-  left: 0;
-  opacity: none;
-  -webkit-transform: none;
-  transform: none;
-}
-.section-our-clients-freebie .list-logos img:hover {
-  opacity: 1;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-.section-our-clients-freebie .nav-text > li.active a {
-  border-bottom: 0;
-  opacity: 1;
-}
-.section-our-clients-freebie .nav-text > li.active a .image-clients img {
-  opacity: 1;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
 .image-clients {
   width: 90px;
   margin: 0 auto;
@@ -2834,6 +2831,8 @@ a,
      text-align: justify; /* For Edge */ 
     text-align-last: left;
   }
+
+
   h1.responsive-small {
     font-size: 2.3em !important;
      text-align: justify; /* For Edge */ 
@@ -3002,6 +3001,7 @@ a,
 
 body {
   position: relative;
+  background-color: #222222;
 }
 
 .navbar-header {
@@ -3879,4 +3879,56 @@ body {
 
 .col-md-4 {
    margin-top: 10px;
+}
+
+
+
+
+img{
+    display: none;
+        position: absolute;
+    z-index: 99;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    left: 50%;
+    top: -70px;
+}
+
+p.style1 {
+  color: #AEAEAE;
+}
+
+p.style2 {
+  color: #6A6A6A;
+}
+
+
+p.style1:hover + img{
+    display: block;
+}
+
+p.style1:hover img{
+    display: block;
+}
+
+h1.kr{
+  color:#8ECFDD;
+  margin: -40px 0;
+}
+
+
+h1.muriimg:hover + img{
+    display: block;
+}
+
+p.muriimg:hover img{
+display: block;
+    position: absolute;
+    z-index: 99;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    left: 50%;
+    top: -70px;
 }
